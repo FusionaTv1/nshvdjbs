@@ -1,0 +1,101 @@
+/* تنسيق الجسم والخلفية */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pn.jpg');
+    background-size: cover;
+    color: #333;
+    margin: 0;
+}
+
+/* تنسيق الشريط العلوي */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border-radius: 5px;
+    border: none;
+}
+
+/* تنسيق القائمة الجانبية */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    left: -250px;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    overflow: auto;
+    transition: left 0.3s ease;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 1em;
+    text-align: right;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* تنسيق المحتوى الرئيسي */
+main {
+    margin-left: 260px;
+    padding: 2em;
+}
+
+.projects {
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* تنسيق التذييل */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content img {
+    max-width: 100px;
+    margin-bottom: 1em;
+}
